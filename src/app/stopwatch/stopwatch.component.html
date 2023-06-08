@@ -1,0 +1,10 @@
+<div class="stopwatch-container">
+  <h2>{{ formatTime(time) }}</h2>
+  <button (click)="startStopwatch()" [disabled]="isRunning">Start</button>
+  <button (click)="stopStopwatch()" [disabled]="!isRunning">Stop</button>
+  <button (click)="resetStopwatch()">Reset</button>
+  <button (click)="recordLap()" [disabled]="!isRunning">Lap</button>
+  <ul *ngIf="laps.length > 0" class="lap-list">
+    <li *ngFor="let lap of laps">{{ formatTime(lap) }}</li>
+  </ul>
+</div>

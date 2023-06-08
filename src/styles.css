@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set modern font family */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Set a background color and text color */
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Add some spacing and center the content vertically */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Apply modern styles to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Apply modern styles to buttons */
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Apply modern styles to input fields */
+input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Apply modern styles to container elements */
+.container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply modern styles to form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Apply modern styles to error messages */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

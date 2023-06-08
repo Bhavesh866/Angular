@@ -1,0 +1,14 @@
+<div class="timer-container">
+  <div class="timer">{{ formatTime(time) }}</div>
+
+  <div class="input-container">
+    <input type="number" [(ngModel)]="inputTime" placeholder="Enter time in seconds" />
+    <button (click)="setTimer()">Set Timer</button>
+  </div>
+
+  <div class="button-container">
+    <button (click)="startTimer()" [disabled]="isRunning || time === 0">Start</button>
+    <button (click)="stopTimer()" [disabled]="!isRunning">Stop</button>
+    <button (click)="resetTimer()" [disabled]="isRunning">Reset</button>
+  </div>
+</div>
